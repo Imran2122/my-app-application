@@ -8,7 +8,7 @@ const HeroSection = () => {
           Trusted by Millions, Built for You
         </h1>
 
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-3  gap-8">
           <div className=" p-6 text-white ">
             <p className="">Total Product</p>
             <h1 className="text-3xl font-bold ">29.6M</h1>
