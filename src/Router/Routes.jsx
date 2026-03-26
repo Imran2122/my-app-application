@@ -13,7 +13,7 @@ export const router = createBrowserRouter([
     path: "/",
     errorElement: (
       <ErrorPage
-        image="/assets/error-404.png"
+        image="./assets/error-404.png"
         heading="Oops, page not found!"
         title="The page you are looking for is not available."
       ></ErrorPage>

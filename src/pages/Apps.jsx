@@ -55,7 +55,7 @@ const Apps = () => {
           searchData.map((app) => <AppCart app={app}></AppCart>)
         ) : (
           <ErrorPage
-            image="/assets/App-Error.png"
+            image="./assets/App-Error.png"
             heading="OPPS!! APP NOT FOUND"
             title="The App you are requesting is not found on our system.  please try another apps"
           ></ErrorPage>

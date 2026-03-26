@@ -54,7 +54,7 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="flex justify-center items-center gap-2">
-          <img className="w-10 h-10" src="/assets/logo.png" alt="" />
+          <img className="w-10 h-10" src="./assets/logo.png" alt="" />
           <Link to='/' className=" text-xl">HERO.IO</Link>
         </div>
       </div>
