@@ -1,212 +1,362 @@
 [
   {
     "id": 1,
-    "image": "https://upload.wikimedia.org/wikipedia/commons/0/04/ChatGPT_logo.svg",
-    "title": "ChatGPT",
-    "companyName": "OpenAI",
-    "description": "An AI assistant for chat, writing, coding, and productivity.",
+    "image": "https://i.ibb.co/Fbrgc8FD/msgnr.webp",
+    "title": "Messenger",
+    "companyName": "Meta",
+    "description": "Secure messaging app.",
     "size": 90,
     "reviews": 102345,
     "ratingAvg": 4.8,
-    "downloads": 56000000
+    "downloads": 56000000,
+    "ratings": [
+      {"name": "5 star", "count": 69594},
+      {"name": "4 star", "count": 18422},
+      {"name": "3 star", "count": 7164},
+      {"name": "2 star", "count": 4093},
+      {"name": "1 star", "count": 3070}
+    ]
   },
   {
-    "id": 21,
-    "image": "https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg",
-    "title": "Amazon Shopping",
-    "companyName": "Amazon",
-    "description": "The world's largest online marketplace for everything.",
+    "id": 2,
+    "image": "https://i.ibb.co/v4ZTMxwh/1.png",
+    "title": "Facebook",
+    "companyName": "Meta",
+    "description": "Social networking platform.",
     "size": 78,
     "reviews": 4567890,
     "ratingAvg": 4.6,
-    "downloads": 95000000
+    "downloads": 95000000,
+    "ratings": [
+      {"name": "5 star", "count": 3106165},
+      {"name": "4 star", "count": 822220},
+      {"name": "3 star", "count": 319752},
+      {"name": "2 star", "count": 182715},
+      {"name": "1 star", "count": 137036}
+    ]
   },
   {
     "id": 3,
-    "image": "https://upload.wikimedia.org/wikipedia/commons/e/e7/Instagram_logo_2016.svg",
+    "image": "https://i.ibb.co/4R77h6dV/3.jpg",
     "title": "Instagram",
     "companyName": "Meta",
-    "description": "Share photos & stories with friends.",
+    "description": "Share photos and reels.",
     "size": 70,
     "reviews": 1865432,
     "ratingAvg": 4.6,
-    "downloads": 41000000
+    "downloads": 41000000,
+    "ratings": [
+      {"name": "5 star", "count": 1268493},
+      {"name": "4 star", "count": 335777},
+      {"name": "3 star", "count": 130580},
+      {"name": "2 star", "count": 74617},
+      {"name": "1 star", "count": 55965}
+    ]
   },
   {
     "id": 4,
-    "image": "https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg",
-    "title": "WhatsApp",
-    "companyName": "Meta",
-    "description": "Encrypted messaging & calls.",
+    "image": "https://i.ibb.co/TMsf02Bp/4.avif",
+    "title": "YouTube",
+    "companyName": "Google",
+    "description": "Video streaming platform.",
     "size": 60,
     "reviews": 2154321,
     "ratingAvg": 4.7,
-    "downloads": 31000000
+    "downloads": 31000000,
+    "ratings": [
+      {"name": "5 star", "count": 1464938},
+      {"name": "4 star", "count": 387777},
+      {"name": "3 star", "count": 150802},
+      {"name": "2 star", "count": 86173},
+      {"name": "1 star", "count": 64629}
+    ]
   },
   {
     "id": 5,
-    "image": "https://upload.wikimedia.org/wikipedia/commons/0/05/Facebook_Logo_%282019%29.png",
-    "title": "Facebook",
+    "image": "https://i.ibb.co/k6yJH7Gm/5.png",
+    "title": "Location",
     "companyName": "Meta",
-    "description": "Connect and share with people.",
+    "description": "Connect with people nearby.",
     "size": 95,
     "reviews": 1547890,
     "ratingAvg": 4.3,
-    "downloads": 35000000
+    "downloads": 35000000,
+    "ratings": [
+      {"name": "5 star", "count": 1052565},
+      {"name": "4 star", "count": 278620},
+      {"name": "3 star", "count": 108352},
+      {"name": "2 star", "count": 61915},
+      {"name": "1 star", "count": 46436}
+    ]
   },
-
   {
     "id": 6,
-    "image": "https://upload.wikimedia.org/wikipedia/commons/8/8a/Google_Gemini_logo.svg",
-    "title": "Google Gemini",
+    "image": "https://i.ibb.co/21Btf6dr/6.jpg",
+    "title": "Gmail",
     "companyName": "Google",
-    "description": "Smart AI assistant.",
+    "description": "Email service with smart features.",
     "size": 88,
     "reviews": 511234,
     "ratingAvg": 4.5,
-    "downloads": 31500000
+    "downloads": 31500000,
+    "ratings": [
+      {"name": "5 star", "count": 347639},
+      {"name": "4 star", "count": 92022},
+      {"name": "3 star", "count": 35786},
+      {"name": "2 star", "count": 20449},
+      {"name": "1 star", "count": 15337}
+    ]
   },
   {
     "id": 7,
-    "image": "https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg",
-    "title": "Telegram",
-    "companyName": "Telegram",
-    "description": "Fast cloud messaging.",
+    "image": "https://i.ibb.co/csy4Bph/spotify.webp",
+    "title": "Spotify",
+    "companyName": "Spotify",
+    "description": "Music streaming platform.",
     "size": 55,
     "reviews": 990123,
     "ratingAvg": 4.6,
-    "downloads": 23600000
+    "downloads": 23600000,
+    "ratings": [
+      {"name": "5 star", "count": 673283},
+      {"name": "4 star", "count": 178222},
+      {"name": "3 star", "count": 69308},
+      {"name": "2 star", "count": 39604},
+      {"name": "1 star", "count": 29703}
+    ]
   },
   {
     "id": 8,
-    "image": "https://upload.wikimedia.org/wikipedia/commons/0/09/YouTube_full-color_icon_%282017%29.svg",
-    "title": "YouTube",
-    "companyName": "Google",
-    "description": "Watch videos & live streams.",
+    "image": "https://i.ibb.co/Gv98t40F/netflix.jpg",
+    "title": "Netflix",
+    "companyName": "Netflix",
+    "description": "Movies and series streaming.",
     "size": 120,
     "reviews": 3245123,
     "ratingAvg": 4.7,
-    "downloads": 65000000
+    "downloads": 65000000,
+    "ratings": [
+      {"name": "5 star", "count": 2206683},
+      {"name": "4 star", "count": 584122},
+      {"name": "3 star", "count": 227158},
+      {"name": "2 star", "count": 129804},
+      {"name": "1 star", "count": 97356}
+    ]
   },
   {
     "id": 9,
-    "image": "https://upload.wikimedia.org/wikipedia/commons/1/19/Spotify_logo_without_text.svg",
-    "title": "Spotify",
-    "companyName": "Spotify",
-    "description": "Stream music & podcasts.",
+    "image": "https://i.ibb.co/Z1Jsg1bq/9.jpg",
+    "title": "Amazon Shopping",
+    "companyName": "Amazon",
+    "description": "Online shopping marketplace.",
     "size": 98,
     "reviews": 2045678,
     "ratingAvg": 4.7,
-    "downloads": 45000000
+    "downloads": 45000000,
+    "ratings": [
+      {"name": "5 star", "count": 1391061},
+      {"name": "4 star", "count": 368222},
+      {"name": "3 star", "count": 143197},
+      {"name": "2 star", "count": 81827},
+      {"name": "1 star", "count": 61371}
+    ]
   },
   {
     "id": 10,
-    "image": "https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png",
-    "title": "LinkedIn",
-    "companyName": "Microsoft",
-    "description": "Professional networking.",
+    "image": "https://i.ibb.co/bg0ZZHfq/10.png",
+    "title": "Google Drive",
+    "companyName": "Google",
+    "description": "Cloud storage and file sharing.",
     "size": 70,
     "reviews": 876321,
     "ratingAvg": 4.3,
-    "downloads": 19500000
+    "downloads": 19500000,
+    "ratings": [
+      {"name": "5 star", "count": 595898},
+      {"name": "4 star", "count": 157737},
+      {"name": "3 star", "count": 61342},
+      {"name": "2 star", "count": 35052},
+      {"name": "1 star", "count": 26292}
+    ]
   },
   {
     "id": 11,
-    "image": "https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg",
-    "title": "Netflix",
-    "companyName": "Netflix",
-    "description": "Movies & series streaming.",
+    "image": "https://i.ibb.co/pBPSTgCG/11.jpg",
+    "title": "GitHub",
+    "companyName": "GitHub",
+    "description": "Code hosting platform.",
     "size": 110,
     "reviews": 3124567,
     "ratingAvg": 4.8,
-    "downloads": 58000000
+    "downloads": 58000000,
+    "ratings": [
+      {"name": "5 star", "count": 2124716},
+      {"name": "4 star", "count": 562422},
+      {"name": "3 star", "count": 218719},
+      {"name": "2 star", "count": 124982},
+      {"name": "1 star", "count": 93728}
+    ]
   },
   {
     "id": 12,
-    "image": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Google_Messages_logo.svg",
-    "title": "Google Messages",
-    "companyName": "Google",
-    "description": "SMS & chat app.",
-    "size": 42,
-    "reviews": 543210,
-    "ratingAvg": 4.4,
-    "downloads": 15000000
-  },
-  {
-    "id": 13,
-    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d0/Google_Play_Arrow_logo.svg",
-    "title": "Google Play Store",
-    "companyName": "Google",
-    "description": "Official Android store.",
-    "size": 50,
-    "reviews": 789123,
-    "ratingAvg": 4.2,
-    "downloads": 83000000
-  },
-  {
-    "id": 14,
-    "image": "https://upload.wikimedia.org/wikipedia/en/a/ad/Snapchat_logo.svg",
-    "title": "Snapchat",
-    "companyName": "Snap",
-    "description": "Photo stories & AR filters.",
-    "size": 75,
-    "reviews": 1345678,
-    "ratingAvg": 4.4,
-    "downloads": 32000000
-  },
-  {
-    "id": 15,
-    "image": "https://upload.wikimedia.org/wikipedia/commons/7/73/Discord_Color_Text_Logo_%282021-present%29.svg",
-    "title": "Discord",
-    "companyName": "Discord",
-    "description": "Voice & chat communities.",
-    "size": 85,
-    "reviews": 1567890,
-    "ratingAvg": 4.6,
-    "downloads": 28000000
-  },
-  {
-    "id": 16,
-    "image": "https://upload.wikimedia.org/wikipedia/commons/0/07/Reddit_icon.svg",
-    "title": "Reddit",
-    "companyName": "Reddit",
-    "description": "Social news & forums.",
-    "size": 65,
-    "reviews": 987654,
-    "ratingAvg": 4.5,
-    "downloads": 23400000
-  },
-  {
-    "id": 17,
-    "image": "https://upload.wikimedia.org/wikipedia/commons/e/e1/Google_Chrome_icon_%28February_2022%29.svg",
-    "title": "Google Chrome",
-    "companyName": "Google",
-    "description": "Fast web browser.",
+    "image": "https://i.ibb.co/Z1TWkjPB/12.png",
+    "title": "Microsoft Word",
+    "companyName": "Microsoft",
+    "description": "Word processor for documents.",
     "size": 115,
     "reviews": 3765432,
     "ratingAvg": 4.7,
-    "downloads": 75000000
+    "downloads": 75000000,
+    "ratings": [
+      {"name": "5 star", "count": 2560493},
+      {"name": "4 star", "count": 677777},
+      {"name": "3 star", "count": 263580},
+      {"name": "2 star", "count": 150617},
+      {"name": "1 star", "count": 112965}
+    ]
   },
   {
-    "id": 18,
-    "image": "https://upload.wikimedia.org/wikipedia/commons/2/2a/Apple_Music_logo.svg",
-    "title": "Apple Music",
-    "companyName": "Apple",
-    "description": "Music streaming service.",
+    "id": 13,
+    "image": "https://i.ibb.co/kVTW54Ch/13.avif",
+    "title": "Zoom",
+    "companyName": "Zoom",
+    "description": "Video conferencing app.",
     "size": 105,
     "reviews": 1456789,
     "ratingAvg": 4.6,
-    "downloads": 39000000
+    "downloads": 39000000,
+    "ratings": [
+      {"name": "5 star", "count": 990616},
+      {"name": "4 star", "count": 262222},
+      {"name": "3 star", "count": 101975},
+      {"name": "2 star", "count": 58271},
+      {"name": "1 star", "count": 43703}
+    ]
   },
   {
-    "id": 19,
-    "image": "https://upload.wikimedia.org/wikipedia/commons/1/12/Google_Drive_icon_%282020%29.svg",
-    "title": "Google Drive",
-    "companyName": "Google",
-    "description": "Cloud file storage.",
+    "id": 14,
+    "image": "https://i.ibb.co/NngFcytY/14.jpg",
+    "title": "Canva",
+    "companyName": "Canva",
+    "description": "Graphic design platform.",
     "size": 89,
     "reviews": 1345123,
     "ratingAvg": 4.7,
-    "downloads": 42000000
+    "downloads": 42000000,
+    "ratings": [
+      {"name": "5 star", "count": 914683},
+      {"name": "4 star", "count": 242122},
+      {"name": "3 star", "count": 94158},
+      {"name": "2 star", "count": 53804},
+      {"name": "1 star", "count": 40353}
+    ]
+  },
+  {
+    "id": 15,
+    "image": "https://i.ibb.co/tM8yCxbG/15.webp",
+    "title": "Airbnb",
+    "companyName": "Airbnb",
+    "description": "Travel and accommodation platform.",
+    "size": 85,
+    "reviews": 845670,
+    "ratingAvg": 4.7,
+    "downloads": 25000000,
+    "ratings": [
+      {"name": "5 star", "count": 575055},
+      {"name": "4 star", "count": 152220},
+      {"name": "3 star", "count": 59197},
+      {"name": "2 star", "count": 33826},
+      {"name": "1 star", "count": 25372}
+    ]
+  },
+  {
+    "id": 16,
+    "image": "https://i.ibb.co/chnwLsYn/uber-eats.png",
+    "title": "Uber Eats",
+    "companyName": "Uber",
+    "description": "Food delivery platform.",
+    "size": 80,
+    "reviews": 834560,
+    "ratingAvg": 4.5,
+    "downloads": 22000000,
+    "ratings": [
+      {"name": "5 star", "count": 567501},
+      {"name": "4 star", "count": 150221},
+      {"name": "3 star", "count": 58419},
+      {"name": "2 star", "count": 33382},
+      {"name": "1 star", "count": 25036}
+    ]
+  },
+  {
+    "id": 17,
+    "image": "https://i.ibb.co/9mFyZhQR/paypal.png",
+    "title": "PayPal",
+    "companyName": "PayPal",
+    "description": "Online payments platform.",
+    "size": 95,
+    "reviews": 954321,
+    "ratingAvg": 4.4,
+    "downloads": 33000000,
+    "ratings": [
+      {"name": "5 star", "count": 648938},
+      {"name": "4 star", "count": 171777},
+      {"name": "3 star", "count": 66802},
+      {"name": "2 star", "count": 38172},
+      {"name": "1 star", "count": 28632}
+    ]
+  },
+  {
+    "id": 18,
+    "image": "https://i.ibb.co/67zBw56J/19.png",
+    "title": "Duolingo",
+    "companyName": "Duolingo",
+    "description": "Language learning platform.",
+    "size": 75,
+    "reviews": 1876543,
+    "ratingAvg": 4.6,
+    "downloads": 47000000,
+    "ratings": [
+      {"name": "5 star", "count": 1276050},
+      {"name": "4 star", "count": 337777},
+      {"name": "3 star", "count": 131358},
+      {"name": "2 star", "count": 75061},
+      {"name": "1 star", "count": 56297}
+    ]
+  },
+  {
+    "id": 19,
+    "image": "https://i.ibb.co.com/239Mzwdz/17.jpg",
+    "title": "Uber",
+    "companyName": "Uber Inc.",
+    "description": "travels and stories.",
+    "size": 82,
+    "reviews": 765432,
+    "ratingAvg": 4.2,
+    "downloads": 21000000,
+    "ratings": [
+      {"name": "5 star", "count": 520493},
+      {"name": "4 star", "count": 137777},
+      {"name": "3 star", "count": 53580},
+      {"name": "2 star", "count": 30617},
+      {"name": "1 star", "count": 22965}
+    ]
+  },
+  {
+    "id": 20,
+    "image": "https://i.ibb.co/KcZqj5J1/20.png",
+    "title": "Evernote",
+    "companyName": "Evernote",
+    "description": "Note-taking and organization app.",
+    "size": 100,
+    "reviews": 2987654,
+    "ratingAvg": 4.5,
+    "downloads": 82000000,
+    "ratings": [
+      {"name": "5 star", "count": 2031604},
+      {"name": "4 star", "count": 537777},
+      {"name": "3 star", "count": 209136},
+      {"name": "2 star", "count": 119506},
+      {"name": "1 star", "count": 89629}
+    ]
   }
 ]

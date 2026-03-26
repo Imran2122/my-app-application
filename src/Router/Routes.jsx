@@ -3,6 +3,7 @@ import MainLayout from "../Layout/MainLayout";
 import Home from "../components/Home";
 import { Suspense } from "react";
 import Apps from "../pages/Apps";
+import AppDetails from "../pages/AppDetails";
 
 const loadData = fetch("/appdata.json").then((res) => res.json());
 export const router = createBrowserRouter([
@@ -22,6 +23,11 @@ export const router = createBrowserRouter([
         path: "/apps",
         loader: () => fetch("/appdata.json"),
         element: <Apps></Apps>,
+      },
+      {
+        path: "/appsDetails/:id",
+        loader: () => fetch("/appdata.json"),
+        element: <AppDetails></AppDetails>,
       },
     ],
   },

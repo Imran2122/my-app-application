@@ -38,7 +38,7 @@ const Apps = () => {
         </div>
       </div>
       {/* end */}
-      <div className="grid grid-cols-4 gap-3 mt-3">
+      <div className="grid grid-cols-1 lg:grid-cols-4   gap-3 mt-3">
         {appData.map((app) => (
           <AppCart key={app.id} app={app} />
         ))}
