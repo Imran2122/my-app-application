@@ -4,6 +4,8 @@ import TitleSection from "../Shared/TitleSection";
 import AppCart from "../components/AppCart";
 import ErrorPage from "./ErrorPage";
 
+import appError from '../../assets/App-Error.png'
+
 const Apps = () => {
   const appData = useLoaderData();
   const [search, setSearch] = useState("");
@@ -55,7 +57,7 @@ const Apps = () => {
           searchData.map((app) => <AppCart app={app}></AppCart>)
         ) : (
           <ErrorPage
-            image="./assets/App-Error.png"
+            image={appError}
             heading="OPPS!! APP NOT FOUND"
             title="The App you are requesting is not found on our system.  please try another apps"
           ></ErrorPage>

@@ -2,11 +2,15 @@ import React from "react";
 import { FaGithub } from "react-icons/fa";
 import { Link, NavLink } from "react-router";
 
+import logo from "../../assets/logo.png";
+
 const Navbar = () => {
   const navLink = (
     <>
       <NavLink
-        className={({ isActive }) => (isActive ? "underline text-[#6D37E5]" : "")}
+        className={({ isActive }) =>
+          isActive ? "underline text-[#6D37E5]" : ""
+        }
         to="/"
       >
         Home
@@ -54,17 +58,24 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="flex justify-center items-center gap-2">
-          <img className="w-10 h-10" src="./assets/logo.png" alt="" />
-          <Link to='/' className=" text-xl">HERO.IO</Link>
+          <img className="w-10 h-10" src={logo} alt="" />
+          <Link to="/" className=" text-xl">
+            HERO.IO
+          </Link>
         </div>
       </div>
       <div className="navbar-center hidden lg:flex">
-        <ul className="lg:text-xl menu menu-horizontal px-1 gap-3">{navLink}</ul>
+        <ul className="lg:text-xl menu menu-horizontal px-1 gap-3">
+          {navLink}
+        </ul>
       </div>
       <div className="navbar-end">
         <img src="/assets/" alt="" />
-        <a href="https://github.com/" target="blank" className="btn bg-gradient-to-r from-violet-500 via-purple-500 to-indigo-500">
-          
+        <a
+          href="https://github.com/"
+          target="blank"
+          className="btn bg-gradient-to-r from-violet-500 via-purple-500 to-indigo-500"
+        >
           <FaGithub></FaGithub>
           Contribute
         </a>
