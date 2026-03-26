@@ -11,18 +11,16 @@ import {
   YAxis,
 } from "recharts";
 import { addToStoreDB } from "../utility/addToDB";
+import toast from "react-hot-toast";
+import { useState } from "react";
 
 const AppDetails = () => {
   const { id } = useParams();
   console.log(id);
   const appData = useLoaderData();
+  const [isInstalled, setIsInstalled] = useState(false);
 
   const singleAppDetails = appData.find((apps) => apps.id === parseInt(id));
-  console.log(singleAppDetails);
-  if (!singleAppDetails) {
-    const singleAppDetails = appData.find((apps) => apps.id === parseInt(id));
-    console.log(singleAppDetails);
-  }
 
   const formatDownload = (num) => {
     if (num >= 1000000) return (num / 1000000).toFixed(0) + "M";
@@ -35,11 +33,18 @@ const AppDetails = () => {
     count: item.count,
   }));
 
-  const handleInstall=(id)=>{
-  
-    addToStoreDB(id)
+  const handleInstall = (id) => {
+    const result = addToStoreDB(id);
 
-  }
+    if (result) {
+      toast.success("App Installed Successfully ✅");
+      setIsInstalled(true);
+    } else {
+      toast.error("Already Installed ❌");
+    }
+
+    setIsInstalled(true);
+  };
 
   return (
     <div className="max-w-5xl lg:max-w-full  mx-auto bg-white shadow-xl rounded-2xl p-6 md:p-10 mt-6 md:mt-12">
@@ -95,14 +100,30 @@ const AppDetails = () => {
           </div>
 
           {/* BUTTON */}
-          <button onClick={()=>handleInstall(id)} className="w-full md:w-auto bg-green-500 hover:bg-green-600 transition text-white text-lg md:text-xl px-8 py-3 md:py-4 rounded-2xl font-semibold">
+          {/* <button
+            disabled={isInstalled}
+          onClick={()=>handleInstall(id)} className="w-full md:w-auto bg-green-500 hover:bg-green-600 transition text-white text-lg md:text-xl px-8 py-3 md:py-4 rounded-2xl font-semibold">
             Install Now ({singleAppDetails.size} MB)
+          </button> */}
+
+          <button
+            onClick={() => handleInstall(id)}
+            disabled={isInstalled}
+            className={`w-full md:w-auto transition text-white text-lg md:text-xl px-8 py-3 md:py-4 rounded-2xl font-semibold ${
+              isInstalled
+                ? "bg-gray-400 cursor-not-allowed"
+                : "bg-green-500 hover:bg-green-600"
+            }`}
+          >
+            {isInstalled
+              ? "Installed"
+              : `Install Now (${singleAppDetails.size} MB)`}
           </button>
 
           {/* CHART */}
           <div className="mt-8 md:mt-10">
             <h2 className="text-lg md:text-2xl font-semibold mb-3 md:mb-4">
-              Rating Distribution 
+              Rating Distribution
             </h2>
 
             <ResponsiveContainer width="100%" height={220} md:height={320}>

@@ -12,17 +12,24 @@ const getStoreApp = () => {
 const addToStoreDB = (id) => {
   const storeAppData = getStoreApp();
   if (storeAppData.includes(id)) {
-    alert("already Exist");
+    return false;
   } else {
     storeAppData.push(id);
-    console.log(storeAppData);
 
-    const data=JSON.stringify(storeAppData)
-    localStorage.setItem('installList',data)
+    const data = JSON.stringify(storeAppData);
+    localStorage.setItem("installList", data);
+    return true;
   }
 };
 
+// remove
 
-// remove 
+const removeStoreApp = (id) => {
+  const appData = getStoreApp();
+  const data = appData.filter((appId) => appId !== id);
 
-export { addToStoreDB,getStoreApp };
+  const removeData = JSON.stringify(data);
+  localStorage.setItem("installList", removeData);
+};
+
+export { addToStoreDB, getStoreApp, removeStoreApp };

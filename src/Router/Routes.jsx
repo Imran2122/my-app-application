@@ -5,12 +5,21 @@ import { Suspense } from "react";
 import Apps from "../pages/Apps";
 import AppDetails from "../pages/AppDetails";
 import InstalledApps from "../pages/InstalledApps";
+import ErrorPage from "../pages/ErrorPage";
 
 const loadData = fetch("/appdata.json").then((res) => res.json());
 export const router = createBrowserRouter([
   {
     path: "/",
+    errorElement: (
+      <ErrorPage
+        image="/assets/error-404.png"
+        heading="Oops, page not found!"
+        title="The page you are looking for is not available."
+      ></ErrorPage>
+    ),
     element: <MainLayout></MainLayout>,
+
     children: [
       {
         index: true,
@@ -32,7 +41,7 @@ export const router = createBrowserRouter([
       },
       {
         path: "/installation",
-         loader: () => fetch("/appdata.json"),
+        loader: () => fetch("/appdata.json"),
         Component: InstalledApps,
       },
     ],

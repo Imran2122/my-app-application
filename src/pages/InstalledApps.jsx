@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { useLoaderData } from "react-router";
-import { getStoreApp } from "../utility/addToDB";
+import { getStoreApp, removeStoreApp } from "../utility/addToDB";
 import TitleSection from "../Shared/TitleSection";
 import InstalledAppCard from "../components/InstalledAppCard";
+import toast from "react-hot-toast";
 
 const InstalledApps = () => {
   const data = useLoaderData();
@@ -24,13 +25,21 @@ const InstalledApps = () => {
   const handleSort = (type) => {
     setSort(type);
 
-    if (type == "rating") {
+    if (type == "ratingAvg") {
       const sorted = [...apps].sort((a, b) => b.ratingAvg - a.ratingAvg);
       setApps(sorted);
     } else if (type == "size") {
       const sorted = [...apps].sort((a, b) => b.size - a.size);
       setApps(sorted);
     }
+  };
+
+  const handleUnInstall = (id) => {
+    removeStoreApp(id);
+
+    const updateData = apps.filter((appId) => appId.id !== id);
+    toast.success("app Successfully Uninstall ✅")
+    setApps(updateData);
   };
 
   return (
@@ -49,7 +58,7 @@ const InstalledApps = () => {
               <a onClick={() => handleSort("size")}>size</a>
             </li>
             <li>
-              <a onClick={() => handleSort("ratings")}>rating</a>
+              <a onClick={() => handleSort("ratingAvg")}>rating</a>
             </li>
           </ul>
         </details>
@@ -57,7 +66,11 @@ const InstalledApps = () => {
 
       <div className="flex flex-col gap-4   mt-6">
         {apps.map((app) => (
-          <InstalledAppCard app={app} key={app.id}></InstalledAppCard>
+          <InstalledAppCard
+            handleUnInstall={handleUnInstall}
+            app={app}
+            key={app.id}
+          ></InstalledAppCard>
         ))}
       </div>
     </div>

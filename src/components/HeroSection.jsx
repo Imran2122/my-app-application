@@ -9,20 +9,20 @@ const HeroSection = () => {
         </h1>
 
         <div className="grid md:grid-cols-3  gap-8">
-          <div className=" p-6 text-white ">
-            <p className="">Total Product</p>
+          <div className=" p-6 text-white space-y-3">
+            <p className="text-2xl font-bold ">Total Product</p>
             <h1 className="text-3xl font-bold ">29.6M</h1>
             <p className="">21% more than last month</p>
           </div>
 
-          <div className=" p-6 text-white ">
-            <p className="">Total Users</p>
+          <div className=" p-6 text-white space-y-3 ">
+            <p className="text-2xl font-bold ">Total Users</p>
             <h1 className="text-3xl font-bold ">12.4M</h1>
             <p className="">15% more than last month</p>
           </div>
 
-          <div className=" p-6 text-white ">
-            <p className="">Revenue</p>
+          <div className=" p-6 text-white space-y-3 ">
+            <p className="text-2xl font-bold ">Revenue</p>
             <h1 className="text-3xl font-bold ">$8.2M</h1>
             <p className="">18% more than last month</p>
           </div>

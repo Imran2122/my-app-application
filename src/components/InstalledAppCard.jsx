@@ -1,8 +1,8 @@
 import React from "react";
 import { FaDownload, FaStar } from "react-icons/fa";
 
-const InstalledAppCard = ({ app }) => {
-  const { image, title, downloads, ratingAvg, size } = app;
+const InstalledAppCard = ({ app, handleUnInstall }) => {
+  const { image, title, downloads, ratingAvg, size, id } = app;
   console.log(ratingAvg);
 
   return (
@@ -29,13 +29,20 @@ const InstalledAppCard = ({ app }) => {
               <FaStar /> {ratingAvg}
             </span>
 
-            <span className="text-gray-400 flex text-xl items-center">{size} MB</span>
+            <span className="text-gray-400 flex text-xl items-center">
+              {size} MB
+            </span>
           </div>
         </div>
       </div>
 
       {/* RIGHT BUTTON */}
-      <button className="btn btn-success btn-sm text-white">Uninstall</button>
+      <button
+        onClick={() => handleUnInstall(id)}
+        className="btn btn-success btn-sm text-white"
+      >
+        Uninstall
+      </button>
     </div>
   );
 };
