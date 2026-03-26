@@ -10,6 +10,7 @@ import {
   XAxis,
   YAxis,
 } from "recharts";
+import { addToStoreDB } from "../utility/addToDB";
 
 const AppDetails = () => {
   const { id } = useParams();
@@ -33,6 +34,12 @@ const AppDetails = () => {
     name: item.name,
     count: item.count,
   }));
+
+  const handleInstall=(id)=>{
+  
+    addToStoreDB(id)
+
+  }
 
   return (
     <div className="max-w-5xl lg:max-w-full  mx-auto bg-white shadow-xl rounded-2xl p-6 md:p-10 mt-6 md:mt-12">
@@ -88,14 +95,14 @@ const AppDetails = () => {
           </div>
 
           {/* BUTTON */}
-          <button className="w-full md:w-auto bg-green-500 hover:bg-green-600 transition text-white text-lg md:text-xl px-8 py-3 md:py-4 rounded-2xl font-semibold">
+          <button onClick={()=>handleInstall(id)} className="w-full md:w-auto bg-green-500 hover:bg-green-600 transition text-white text-lg md:text-xl px-8 py-3 md:py-4 rounded-2xl font-semibold">
             Install Now ({singleAppDetails.size} MB)
           </button>
 
           {/* CHART */}
           <div className="mt-8 md:mt-10">
             <h2 className="text-lg md:text-2xl font-semibold mb-3 md:mb-4">
-              Rating Distribution ⭐
+              Rating Distribution 
             </h2>
 
             <ResponsiveContainer width="100%" height={220} md:height={320}>

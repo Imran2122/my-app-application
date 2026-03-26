@@ -23,23 +23,25 @@ const Banner = () => {
 
             <div className="mt-6 flex justify-center gap-4">
               <div className="flex">
-                <Link
-                  to="/products"
+                <a
+                  href="https://play.google.com"
+                     target="_blank"
                   className="flex items-center justify-center gap-2 bg-indigo-600 text-white px-6 py-3 rounded-lg shadow hover:bg-indigo-700 transition"
                 >
                   <BiLogoPlayStore size={22} />
                   Google Play
-                </Link>
+                </a>
               </div>
 
               <div className="flex">
-                <Link
-                  to="/about"
+                <a
+                  href="https://play.google.com/store/apps"
+                     target="_blank"
                   className="flex items-center justify-center gap-2 border px-6 py-3 rounded-lg hover:bg-white transition"
                 >
                   <FaAppStore size={20} />
                   App Store
-                </Link>
+                </a>
               </div>
             </div>
           </div>

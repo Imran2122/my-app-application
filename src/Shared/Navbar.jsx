@@ -1,6 +1,6 @@
 import React from "react";
 import { FaGithub } from "react-icons/fa";
-import { NavLink } from "react-router";
+import { Link, NavLink } from "react-router";
 
 const Navbar = () => {
   const navLink = (
@@ -55,7 +55,7 @@ const Navbar = () => {
         </div>
         <div className="flex justify-center items-center gap-2">
           <img className="w-10 h-10" src="/assets/logo.png" alt="" />
-          <a className=" text-xl">HERO.IO</a>
+          <Link to='/' className=" text-xl">HERO.IO</Link>
         </div>
       </div>
       <div className="navbar-center hidden lg:flex">
@@ -63,7 +63,8 @@ const Navbar = () => {
       </div>
       <div className="navbar-end">
         <img src="/assets/" alt="" />
-        <a className="btn bg-gradient-to-r from-violet-500 via-purple-500 to-indigo-500">
+        <a href="https://github.com/" target="blank" className="btn bg-gradient-to-r from-violet-500 via-purple-500 to-indigo-500">
+          
           <FaGithub></FaGithub>
           Contribute
         </a>
